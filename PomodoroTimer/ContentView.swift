@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    var currentTime: String = "0"
+    var setTime: String = "25"
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        topView()
     }
 }
 
