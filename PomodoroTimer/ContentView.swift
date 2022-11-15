@@ -8,11 +8,45 @@
 import SwiftUI
 
 struct ContentView: View {
-    var currentTime: String = "0"
-    var setTime: String = "25"
     
     var body: some View {
-        topView()
+        NavigationStack {
+                    TabView {
+                        
+                        homeView()
+                            .tabItem {
+                                Image(systemName: "square.grid.2x2")
+                                    .foregroundColor(.black)
+                            }
+                        
+                        homeView()
+                            .tabItem {
+                                ZStack {
+                                    Rectangle()
+                                        .foregroundColor(.black)
+                                    Image(systemName: "house")
+                                }
+                                .frame(width: 140, height: 140)
+
+                            }
+                        
+                        homeView()
+                            .tabItem {
+                                Image(systemName: "chart.bar.xaxis")
+                                    .foregroundColor(.black)
+                            }
+                    }
+                    .tint(.black)
+         
+                .navigationTitle("info")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbarColorScheme(.dark, for: .navigationBar)
+            
+                .navigationBarItems(leading:  circleImage().frame(width:                  40, height: 40),
+                                    trailing: Image(systemName: "gearshape").resizable()
+                                    .frame(width: 28, height: 28)
+            )
+        }
     }
 }
 
