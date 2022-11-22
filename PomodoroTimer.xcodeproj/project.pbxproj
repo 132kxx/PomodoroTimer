@@ -7,27 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B40E2BC429233AFA0036A7E0 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E2BC329233AFA0036A7E0 /* profileView.swift */; };
-		B40E2BC629233BDC0036A7E0 /* circleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E2BC529233BDC0036A7E0 /* circleImage.swift */; };
-		B40E2BC829233CB80036A7E0 /* gridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E2BC729233CB80036A7E0 /* gridView.swift */; };
-		B40E2BCA292341360036A7E0 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E2BC9292341360036A7E0 /* homeView.swift */; };
 		B4760C83291E039C00AFEEB1 /* PomodoroTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4760C82291E039C00AFEEB1 /* PomodoroTimerApp.swift */; };
 		B4760C85291E039C00AFEEB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4760C84291E039C00AFEEB1 /* ContentView.swift */; };
 		B4760C87291E039E00AFEEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4760C86291E039E00AFEEB1 /* Assets.xcassets */; };
 		B4760C8B291E039E00AFEEB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4760C8A291E039E00AFEEB1 /* Preview Assets.xcassets */; };
+		B48053ED292C756B00FB8B7B /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48053EC292C756B00FB8B7B /* cardView.swift */; };
+		B4885F302928F80E00AFDD41 /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4885F2F2928F80E00AFDD41 /* mainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B40E2BC329233AFA0036A7E0 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
-		B40E2BC529233BDC0036A7E0 /* circleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleImage.swift; sourceTree = "<group>"; };
-		B40E2BC729233CB80036A7E0 /* gridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridView.swift; sourceTree = "<group>"; };
-		B40E2BC9292341360036A7E0 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
 		B4760C7F291E039C00AFEEB1 /* PomodoroTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4760C82291E039C00AFEEB1 /* PomodoroTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerApp.swift; sourceTree = "<group>"; };
 		B4760C84291E039C00AFEEB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4760C86291E039E00AFEEB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4760C88291E039E00AFEEB1 /* PomodoroTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PomodoroTimer.entitlements; sourceTree = "<group>"; };
 		B4760C8A291E039E00AFEEB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B48053EC292C756B00FB8B7B /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
+		B4885F2F2928F80E00AFDD41 /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +56,9 @@
 		B4760C81291E039C00AFEEB1 /* PomodoroTimer */ = {
 			isa = PBXGroup;
 			children = (
-				B4760C82291E039C00AFEEB1 /* PomodoroTimerApp.swift */,
-				B40E2BC529233BDC0036A7E0 /* circleImage.swift */,
-				B40E2BC329233AFA0036A7E0 /* profileView.swift */,
-				B40E2BC729233CB80036A7E0 /* gridView.swift */,
-				B40E2BC9292341360036A7E0 /* homeView.swift */,
+				B4885F282928EBA200AFDD41 /* View */,
 				B4760C84291E039C00AFEEB1 /* ContentView.swift */,
+				B4760C82291E039C00AFEEB1 /* PomodoroTimerApp.swift */,
 				B4760C86291E039E00AFEEB1 /* Assets.xcassets */,
 				B4760C88291E039E00AFEEB1 /* PomodoroTimer.entitlements */,
 				B4760C89291E039E00AFEEB1 /* Preview Content */,
@@ -79,6 +72,15 @@
 				B4760C8A291E039E00AFEEB1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4885F282928EBA200AFDD41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4885F2F2928F80E00AFDD41 /* mainView.swift */,
+				B48053EC292C756B00FB8B7B /* cardView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,12 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B40E2BC429233AFA0036A7E0 /* profileView.swift in Sources */,
-				B40E2BC629233BDC0036A7E0 /* circleImage.swift in Sources */,
+				B4885F302928F80E00AFDD41 /* mainView.swift in Sources */,
 				B4760C85291E039C00AFEEB1 /* ContentView.swift in Sources */,
-				B40E2BC829233CB80036A7E0 /* gridView.swift in Sources */,
+				B48053ED292C756B00FB8B7B /* cardView.swift in Sources */,
 				B4760C83291E039C00AFEEB1 /* PomodoroTimerApp.swift in Sources */,
-				B40E2BCA292341360036A7E0 /* homeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
