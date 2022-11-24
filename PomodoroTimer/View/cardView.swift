@@ -13,57 +13,53 @@ struct cardView: View {
             let size = $0.size
             let widthSize = size.width * 0.7
             let heightSize = widthSize * 1.618
-            VStack(spacing: 0) {
-                Text("WED 23 March")
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.top)
-                    .padding(.leading)
+            let paddingSize = $0.size.width * 0.15
                 
-                HStack() {
-                    Text("Good Morning \ndodoni")
-                        .font(.title)
-                        .fontWeight(.bold)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 40) {
+                    Rectangle()
+                        .frame(width: paddingSize-55, height: 0)
                     
-                    Spacer()
-                    
-                    Circle()
-                        .frame(width: 50)
-                }
-                .frame(maxWidth: .infinity)
-                .padding()
-                
-                Text("pomodoro developer \ndodonie developer")
-                    .foregroundColor(.secondary)
-                    .font(.caption)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.leading)
-                    .padding(.top, -10)
-                
-                VStack(spacing: 0) {
-                        Text("재정학")
-                            .font(.system(size: 40))
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.horizontal)
-
-                        Image("Coin")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .zIndex(1)
-                    }
-                    .frame(width: widthSize, height: heightSize)
-                    .background {
+                    ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { _ in
                         ZStack {
-                            Rectangle()
+                                RoundedRectangle(cornerRadius: 15)
 
-                        }
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                }.frame(maxWidth: .infinity, maxHeight: .infinity)
-            }
+                                VStack {
+                                    HStack {
+                                          Text("Economy")
+                                            .font(.title)
+                                            .fontWeight(.semibold)
+                                            .padding(5)
+                                            .underline()
+                                        
+                                            Spacer()
+                                        
+                                            }
+                                        .padding(.leading)
+
+                                        Image("Coin")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .zIndex(1)
+                                    
+                                        Text("01:30:20")
+                                        .font(.headline)
+                                        .fontWeight(.semibold)
+                                    }
+                                .foregroundColor(.white)
+                            }
+                        .frame(width: widthSize, height: heightSize)
+                    }
+                    
+                    Rectangle()
+                        .frame(width: paddingSize-55, height: 0)
+                }
+                .padding(.horizontal)
             }
         }
     }
-
+}
 struct cardView_Previews: PreviewProvider {
     static var previews: some View {
         cardView()
