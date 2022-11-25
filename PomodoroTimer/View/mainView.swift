@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct mainView: View {
+
     var body: some View {
             VStack{
                 headerView()

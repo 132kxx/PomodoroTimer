@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct bottomVIew: View {
+    @ObservedObject var viewModel = SubjectViewModel()
     var body: some View {
         Text("06:40:20")
     }

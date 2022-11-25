@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct cardView: View {
+    @ObservedObject var viewModel = SubjectViewModel()
+    
     var body: some View {
         GeometryReader {
             let size = $0.size
@@ -21,13 +23,13 @@ struct cardView: View {
                     Rectangle()
                         .frame(width: paddingSize-55, height: 0)
                     
-                    ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { _ in
+                    ForEach(viewModel.subjects) { subject in
                         ZStack {
                                 RoundedRectangle(cornerRadius: 15)
 
                                 VStack {
                                     HStack {
-                                          Text("Economy")
+                                        Text("\(subject.name)")
                                             .font(.title)
                                             .fontWeight(.semibold)
                                             .padding(5)
@@ -43,7 +45,7 @@ struct cardView: View {
                                             .aspectRatio(contentMode: .fit)
                                             .zIndex(1)
                                     
-                                        Text("01:30:20")
+                                    Text("\(subject.studytime)")
                                         .font(.headline)
                                         .fontWeight(.semibold)
                                     }
