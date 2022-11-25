@@ -17,6 +17,9 @@ class SubjectViewModel: ObservableObject {
     func addSubject() {
         subjects = subjectsData
     }
+    
+
+    
 }
 
 

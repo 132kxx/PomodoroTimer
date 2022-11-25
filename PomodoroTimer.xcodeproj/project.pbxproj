@@ -16,6 +16,7 @@
 		B4760C8B291E039E00AFEEB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4760C8A291E039E00AFEEB1 /* Preview Assets.xcassets */; };
 		B48053ED292C756B00FB8B7B /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48053EC292C756B00FB8B7B /* cardView.swift */; };
 		B4885F302928F80E00AFDD41 /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4885F2F2928F80E00AFDD41 /* mainView.swift */; };
+		B491355E2930955C00BB9A1F /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B491355D2930955C00BB9A1F /* TimerViewModel.swift */; };
 		B4D824CF29305CCC0005601B /* SubjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D824CE29305CCC0005601B /* SubjectViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		B4760C8A291E039E00AFEEB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B48053EC292C756B00FB8B7B /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
 		B4885F2F2928F80E00AFDD41 /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
+		B491355D2930955C00BB9A1F /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		B4D824CE29305CCC0005601B /* SubjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B4D824CE29305CCC0005601B /* SubjectViewModel.swift */,
+				B491355D2930955C00BB9A1F /* TimerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B43C6B9A292F17700000BE46 /* headerView.swift in Sources */,
+				B491355E2930955C00BB9A1F /* TimerViewModel.swift in Sources */,
 				B4885F302928F80E00AFDD41 /* mainView.swift in Sources */,
 				B4760C85291E039C00AFEEB1 /* ContentView.swift in Sources */,
 				B43C6B9C292F1A090000BE46 /* bottomVIew.swift in Sources */,
